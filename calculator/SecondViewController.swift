@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+//slackと連携できたかテスト
+//画面を２画面にせず、スクロールにしたくなってきた。
+//やりたいことは明確だけど、プログラミングで行き詰まる。
+
+
+
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
