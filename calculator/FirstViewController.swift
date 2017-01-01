@@ -56,20 +56,20 @@ class FirstViewController: UIViewController , UITableViewDelegate {
     
     
     
-    
-    @IBAction func input_button(sender: AnyObject) {
-        history_list.append(textfield.text!)
-        textfield.text = ""
-        NSUserDefaults.standardUserDefaults().setObject(todolist, forKey: "list")
-        
-    }
-    
-    @IBOutlet weak var iii: UILabel!
-    @IBAction func additem(sender: AnyObject) {
-        todolist.append(textfield.text!)
-        textfield.text = ""
-        NSUserDefaults.standardUserDefaults().setObject(todolist, forKey: "list")
-    }
+//    
+//    @IBAction func input_button(sender: AnyObject) {
+//        history_list.append(textfield.text!)
+//        textfield.text = ""
+//        NSUserDefaults.standardUserDefaults().setObject(todolist, forKey: "list")
+//        
+//    }
+//    
+//    @IBOutlet weak var iii: UILabel!
+//    @IBAction func additem(sender: AnyObject) {
+//        todolist.append(textfield.text!)
+//        textfield.text = ""
+//        NSUserDefaults.standardUserDefaults().setObject(todolist, forKey: "list")
+//    }
 
 
 
