@@ -47,13 +47,7 @@ var history_list = [String]()
 
 class FirstViewController: UIViewController , UITableViewDelegate {
 
-    
-    @IBOutlet weak var input_money_field: UITextField!
-    
-    
-    @IBOutlet weak var input_memo_field: UITextField!
-    
-    
+
     
     
 //    

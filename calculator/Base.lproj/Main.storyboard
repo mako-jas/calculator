@@ -234,7 +234,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button_0:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="76U-wE-AV2"/>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="sQD-9g-Q6L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4R-1R-nuT" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
@@ -258,7 +258,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCa-aZ-lbY" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCa-aZ-lbY" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="16" y="407" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="1">
@@ -279,10 +279,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button_1:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="stY-gp-GGw"/>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pzG-DR-fdY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2S-xU-kaq" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2S-xU-kaq" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="95" y="409" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="2">
@@ -303,10 +303,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button_2:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="u2A-Q4-sxI"/>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Owg-6C-nUg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-fN-wYc" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-fN-wYc" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="174" y="407" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="3">
@@ -327,10 +327,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button_3:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="hXy-Zj-JYH"/>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="onO-9I-oFM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MK-vQ-gQI" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MK-vQ-gQI" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="16" y="331" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="4">
@@ -350,8 +350,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9WM-rU-nHt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMO-IW-wn0" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMO-IW-wn0" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="95" y="331" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="5">
@@ -371,8 +374,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="q6T-HR-JEk"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-5n-uW8" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9q-5n-uW8" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="174" y="331" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="6">
@@ -392,8 +398,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="1hP-jC-CQS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4i-Zw-SGJ" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4i-Zw-SGJ" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="16" y="254" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="７">
@@ -413,6 +422,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="1VL-Y7-SQi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9D-Sb-mLN" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="16" y="205" width="77" height="48"/>
@@ -434,6 +446,9 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="all_delete:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="4sj-OP-TkO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2f-lY-4L2" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="95" y="205" width="77" height="48"/>
@@ -476,8 +491,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="word_delete:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Zpk-S3-0N2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY6-p9-9CW" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="44" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY6-p9-9CW" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="253" y="205" width="105" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="÷">
@@ -497,8 +515,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_4calc:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="DDO-Ji-UUM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRG-L3-07h" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRG-L3-07h" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="95" y="254" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="８">
@@ -518,8 +539,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Q6m-Cs-KcL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-8J-qwL" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-8J-qwL" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="174" y="254" width="77" height="76"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="9">
@@ -539,12 +563,15 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_num:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="7az-vf-5wc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U4-Jz-Qil">
                                 <rect key="frame" x="21" y="580" width="335" height="30"/>
                                 <state key="normal" title="入力"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwN-r5-9JW" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwN-r5-9JW" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="253" y="254" width="105" height="76"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="×">
@@ -564,8 +591,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_4calc:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="7y2-9N-sn2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-uV-nos" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-uV-nos" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="251" y="331" width="105" height="76"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="-">
@@ -585,8 +615,11 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button_4calc:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vTr-Ct-iHA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-Zu-8qP" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-Zu-8qP" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="251" y="407" width="105" height="76"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+">
@@ -607,10 +640,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button_p:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="yA0-gd-SHA"/>
+                                    <action selector="button_4calc:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rnV-sW-59D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXF-W9-7ib" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
+                            <button opaque="NO" tag="55" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXF-W9-7ib" customClass="Button_Custom" customModule="calculator" customModuleProvider="target">
                                 <rect key="frame" x="250" y="485" width="105" height="76"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="=">
@@ -631,7 +664,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="button_e:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="X6J-dw-nQi"/>
+                                    <action selector="button_4calc:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="iQ8-iu-SAA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -646,8 +679,6 @@
                     <tabBarItem key="tabBarItem" title="入力" image="second" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="button_1" destination="bCa-aZ-lbY" id="QDv-Gd-bse"/>
-                        <outlet property="button_2" destination="X2S-xU-kaq" id="t8B-UD-vUZ"/>
                         <outlet property="memo_field" destination="Ht9-9T-ygR" id="FLg-ij-4dy"/>
                         <outlet property="money_field" destination="BDW-MZ-WHx" id="KGn-9D-q58"/>
                     </connections>
